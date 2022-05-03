@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang=“pt-br”>
+    <head>
+        <title>Praticando Javascript</title>
+        <link rel="stylesheet" href="Style.css">
+        <meta charset=“UTF-8”>
+        <script>
+            var frutas1=new Array();
+                frutas1[0]="Maçã";
+                frutas1[1]=" Laranja";
+                frutas1[2]=" Pera";
+
+            var frutas2=new Array();
+                frutas2[0]=" Banana";
+                frutas2[1]=" Mamão";
+                frutas2[2]=" Melão";
+
+            var frutas3=new Array();
+                frutas3[0]=" Melancia";
+                frutas3[1]=" Limão";
+                frutas3[2]="Tomate";   
+            function somarVetores()
+            {
+                var result = frutas1.concat(frutas2).concat(frutas3);
+                document.getElementById("matriz2").innerHTML="<strong> Vetores: </strong> <br><br>"+result;
+            } 
+        </script>
+    </head>
+<body>
+  
+    <div id="container">
+        <div class="content">
+            <h5>
+                Somar os 3 vetores de frutas:
+            </h5>
+            <a id="f" onclick="somarVetores()">Somar Vetores</a>
+            <a href="Index.html" class="buttonA">Voltar</a>
+            <div id="matriz2"></div>
+        </div>    
+    </div>
+    
+</body>
+</html>

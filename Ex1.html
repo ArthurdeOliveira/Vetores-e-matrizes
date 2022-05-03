@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang=“pt-br”>
+    <head>
+        <title>Praticando Javascript</title>
+        <link rel="stylesheet" href="Style.css">
+        <meta charset=“UTF-8”>
+        <script>
+            function exibirMatriz()
+            {
+                var mochila=new Array();
+                mochila[0]="cadernos";
+                mochila[1]="estojo";
+                mochila[2]="lapiseira";
+                mochila[3]="regua";
+                mochila[4]="caneta";
+                document.getElementById("matriz2").innerHTML ="<strong>Conteúdo: </strong> <br>" + mochila[0] + "<br>"
+                 + mochila[1]+"<br>" + mochila[2]+"<br>" + mochila[3]+"<br>"+ mochila[4]+"<br>";
+            }
+        </script>
+    </head>
+<body>
+   
+    <div id="container">
+        <div class="content">
+            <h5>
+                Matriz de Materiais escolares:
+            </h5>
+           
+            <a id="f" onclick="exibirMatriz()">Exibir Matriz</a>
+            <a href="Index.html" class="buttonA">Voltar</a>
+            <div id="matriz2"></div>  
+            
+        </div>  
+    </div>
+    
+</body>
+</html>

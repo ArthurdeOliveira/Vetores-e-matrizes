@@ -1,0 +1,59 @@
+<html lang=“pt-br”>
+<head>
+		<title>Praticando Javascript</title>
+		<meta charset=“UTF-8”>
+		<link rel="stylesheet" type="text/css" href="Style.css">
+        <script type="text/javascript">
+            function exibirMatriz()
+            {
+                // Declaração das variaveis  
+                var LINHAS = document.getElementById("linhas").value;
+                var COLUNAS = document.getElementById("colunas").value;
+                // Esta limpando a Matriz da Memória
+                var MATRIZ2 = [];
+
+                for (var i = 0; i < LINHAS; i++) {
+                    MATRIZ2[i] = [];
+	                for (var j = 0; j < COLUNAS; j++){
+	                    MATRIZ2[i][j] = ' ';
+                    }
+                }
+                // Entrada de Dados na Matriz
+                for (var L = 0; L < LINHAS; L++) {
+                    for (var C = 0; C < COLUNAS; C++) {
+                        MATRIZ2[L][C] = prompt("Inserir dados na matriz: ")
+	                }
+                }
+                // Vamos mostrar os dados da Matriz 
+
+                var VALORES2 = "";
+                    for (var L = 0; L < LINHAS; L++) {
+                        for (var C = 0; C < COLUNAS; C++) {
+	                        if (C < COLUNAS - 1) {
+	                            VALORES2 += MATRIZ2[L][C] + "\t\t"
+	                        } else { VALORES2 += MATRIZ2[L][C] + "\n";	}
+	                    }
+                    }
+                alert("Conteudo da Matriz: \n" + VALORES2);
+
+                //document.getElementById("matriz").innerHTML = "Conteudo da Matriz: <strong>\n" + VALORES2;
+            }
+        </script>
+</head>
+<body>
+	<div id="container">
+		<div class="content">
+            <h5>
+                Preencher e exibir uma matriz:
+            </h5>
+            <label id= "one" for="linhas">Linhas: </label>
+            <input id="linhas" type="number" min="0" max="250"><br>
+			<label id= "two" for="colunas">Colunas: </label>
+            <input id="colunas" type="number" min="0" max="250"><br>
+            <a id="e" onclick="exibirMatriz()">Exibir Matriz</a>
+            <a href="Index.html" class="buttonA">Voltar</a>
+            <div id="matriz"></div>
+		</div>
+	</div>
+</body>
+</html>

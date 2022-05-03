@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang=“pt-br”>
+    <head>
+        <title>Praticando Javascript</title>
+        <link rel="stylesheet" href="Style.css">
+        <meta charset=“UTF-8”>
+        <script>
+            var codfuncionario=new Array();
+                codfuncionario[0]="01";
+                codfuncionario[1]="02";
+                codfuncionario[2]="03";
+
+            var salariobruto=new Array();
+                salariobruto[0]=" 1500";
+                salariobruto[1]=" 2600";
+                salariobruto[2]=" 4300";
+
+            var desconto=new Array();
+                desconto[0]="250";
+                desconto[1]="150";
+                desconto[2]="100";  
+
+            var salarioLiquido=new Array();
+                salarioLiquido[0]= (salariobruto[0]-desconto[0]);
+                salarioLiquido[1]= (salariobruto[1]-desconto[1]);
+                salarioLiquido[2]= (salariobruto[2]-desconto[2]);
+
+            function calcularSalario()
+            {
+               
+                document.getElementById("salario1").innerHTML= "O salário líquido do funcionário de código " +codfuncionario[0]+ " é de: " + salarioLiquido[0];
+                document.getElementById("salario2").innerHTML= "O salário líquido do funcionário de código " +codfuncionario[1]+ " é de: " + salarioLiquido[1];
+                document.getElementById("salario3").innerHTML= "O salário líquido do funcionário de código " +codfuncionario[2]+ " é de: " + salarioLiquido[2];
+            } 
+        </script>
+    </head>
+<body>
+  
+    <div id="container">
+        <div class="content">
+            <h5>
+                Calcular descontos de salário:
+            </h5>
+            <a id="f" onclick="calcularSalario()">Calcular salário</a>
+            <a href="Index.html" class="buttonA">Voltar</a>
+            <div id="salario1"></div>
+            <div id="salario2"></div>
+            <div id="salario3"></div>
+        </div>    
+    </div>
+    
+</body>
+</html>

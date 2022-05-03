@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+
+/*Normais:*/
+* 
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body {
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background: linear-gradient(45deg, #820263, #d90368);
+	height: 100vh;
+}
+
+a 
+{
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+	background: #04a777;
+	color: #ffffff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 2px;
+	border-bottom: 4px solid #1b998b;
+}
+
+button
+{
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+    background: #1b998b;
+	color: #ffffff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 2px;
+	border-bottom: 4px solid #04a777;
+}
+
+/*CONTAINER:*/
+#container
+{
+    position: absolute;
+    background-color: #291720;
+	border-bottom: 8px solid #3b3237;
+	top: 10%;
+	left: 10%;
+	right: 10%;
+	bottom: 10%;
+	border-radius: 10px;
+	/*width: 100%;
+	height: 100%;*/
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+#container .content
+{
+    max-width: 600px;
+    text-align: center;
+}
+#container .content h2 {
+	font-size: 3em;
+	color:#fff;
+	line-height: 2em;
+}
+
+#container .content h4 {
+	position: relative;
+	font-size: 2em;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 300;
+	padding: 10px 20px;
+	display: inline-block;
+}
+#container .content h5 {
+	position: absolute;
+	top:20%;
+	left:20%;
+	font-size: 3em;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 600;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+#container .content p {
+	color: #ffffff;
+	font-size: 1.2em;
+}
+
+#container .content a {
+	position: relative;
+	display: inline-block;
+	padding: 10px 25px;
+    background: #1b998b;
+	color: #ffffff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 2px;
+	border-bottom: 4px solid #04a777;
+}
+#container .content jstext {
+	position: relative;
+	font-size: 3em;
+	margin-bottom: 20px;
+	color: #fff;
+	font-weight: 400;
+	padding: 10px 20px;
+	display: inline-block;
+}
+
+/*LABEL:*/
+label#one {
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+}
+label#two {
+	color: #fff;
+	font-size: 20px;
+	position: relative;
+	
+}
+
+/*ID's:*/
+#f
+{
+	position: absolute;
+	top:20%;
+	display: inline-block;
+	padding: 10px 25px;
+	background: #04a777;
+	color: #ffffff;
+	text-decoration: none;
+	margin-top: 25px;
+	border-radius: 2px;
+	border-bottom: 4px solid #1b998b;
+	cursor: pointer;
+}
+
+#matriz
+{
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 38%;
+	text-align: center;
+	width: 25%;
+	text-decoration: solid;
+	display: table;
+	cursor: pointer;
+}
+#matriz2
+{
+	background-color: #1b998b;
+	border-radius: 20px;
+	border-style: inherit;
+	/*border-top: 4px solid turquoise;
+	border-bottom: 6px solid turquoise;
+	border-left: 3px solid #04a777;
+	border-right: 3px solid #04a777;*/
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 37%;
+	text-align: center;
+	width: 25%;
+	text-decoration: solid;
+	display: table;
+	cursor: pointer;
+}
+#matriz3
+{
+	background-color: #1b998b;
+	border-radius: 20px;
+	border-top: 4px solid turquoise;
+	border-bottom: 6px solid turquoise;
+	border-left: 4px solid turquoise;
+	border-right: 4px solid turquoise;
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 38%;
+	left: 35%;
+	text-align: center;
+	width: 30%;
+	text-decoration: solid;
+	display: inline;
+	cursor: pointer;
+}
+
+#salario1
+{
+	background-color: #1b998b;
+	border-radius: 20px;
+	border-style: inherit;
+	/*border-top: 4px solid turquoise;
+	border-bottom: 6px solid turquoise;
+	border-left: 3px solid #04a777;
+	border-right: 3px solid #04a777;*/
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 10%;
+	text-align: center;
+	width: 25%;
+	text-decoration: solid;
+	display: inline-block;
+	cursor: pointer;
+}
+#salario2
+{
+	background-color: #1b998b;
+	border-radius: 20px;
+	border-style: inherit;
+	/*border-top: 4px solid turquoise;
+	border-bottom: 6px solid turquoise;
+	border-left: 3px solid #04a777;
+	border-right: 3px solid #04a777;*/
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 37%;
+	text-align: center;
+	width: 25%;
+	text-decoration: solid;
+	display: table;
+	cursor: pointer;
+}
+#salario3
+{
+	background-color: #1b998b;
+	border-radius: 20px;
+	border-style: inherit;
+	/*border-top: 4px solid turquoise;
+	border-bottom: 6px solid turquoise;
+	border-left: 3px solid #04a777;
+	border-right: 3px solid #04a777;*/
+	font-size: 20px;
+	position: absolute;
+	color: white;
+	top: 65%;
+	left: 64%;
+	text-align: center;
+	width: 25%;
+	text-decoration: solid;
+	display: table;
+	cursor: pointer;
+}
+
